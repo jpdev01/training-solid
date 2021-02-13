@@ -83,4 +83,10 @@ public class Employee implements EmployeeInterface{
     public void setCalculator(CalculatorInterface calc) {
         this.calc = calc;
     }
+
+    @Override
+    public String getType()
+    {
+        return "Simples";
+    }
 }

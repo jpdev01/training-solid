@@ -1,10 +1,9 @@
 package employee;
 
-import calculator.Calculator;
 import calculator.CalculatorInterface;
 import calculator.CalculatorSenior;
 
-public class EmployeeSenior implements EmployeeInterface{
+public class EmployeePleno implements EmployeeInterface{
 
     private String name;
     private String account;
@@ -13,9 +12,9 @@ public class EmployeeSenior implements EmployeeInterface{
     private Float totalHours;
     private CalculatorInterface calc;
 
-    public EmployeeSenior() {}
+    public EmployeePleno() {}
 
-    public EmployeeSenior(String name, String account, Float salario, Float workedHours, Float totalHours)
+    public EmployeePleno(String name, String account, Float salario, Float workedHours, Float totalHours)
     {
         this.setName(name);
         this.setAccount(account);
@@ -88,6 +87,6 @@ public class EmployeeSenior implements EmployeeInterface{
     @Override
     public String getType()
     {
-        return "Sênior";
+        return "Pleno";
     }
 }

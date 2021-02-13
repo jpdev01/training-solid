@@ -28,5 +28,7 @@ public interface EmployeeInterface {
 
     public void setCalculator(CalculatorInterface calc);
 
+    public String getType();
+
 
 }

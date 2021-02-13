@@ -6,7 +6,7 @@ import employee.EmployeeSenior;
 import java.util.ArrayList;
 import java.util.List;
 
-public class simulation {
+public class Simulator {
 
     public static void main(String[] args) {
         List<EmployeeInterface> list = new ArrayList<>();
