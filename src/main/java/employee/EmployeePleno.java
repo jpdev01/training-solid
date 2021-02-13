@@ -1,6 +1,7 @@
 package employee;
 
 import calculator.CalculatorInterface;
+import calculator.CalculatorPleno;
 import calculator.CalculatorSenior;
 
 public class EmployeePleno implements EmployeeInterface{
@@ -21,7 +22,7 @@ public class EmployeePleno implements EmployeeInterface{
         this.setSalario(salario);
         this.setWorkedHours(workedHours);
         this.setTotalHours(totalHours);
-        this.setCalculator(new CalculatorSenior());
+        this.setCalculator(new CalculatorPleno());
     }
 
     @Override
