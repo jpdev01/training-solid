@@ -1,5 +1,6 @@
 import calculator.Calculator;
 import employee.Employee;
+import employee.EmployeeInterface;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,13 +8,13 @@ import java.util.List;
 public class simulation {
 
     public static void main(String[] args) {
-        List<Employee> list = new ArrayList<>();
+        List<EmployeeInterface> list = new ArrayList<>();
         list.add(new Employee("Carlos", "12323", 1000f, 50f, 100f));
 
-        for (Employee e : list)
+        for (EmployeeInterface e : list)
         {
-            Float salarioLiquido = new Calculator().salarioFinal(e);
-            System.out.println(salarioLiquido);
+            Float salarioLiquido = e.getCalculator().salarioFinal(e);
+            System.out.println("O funcionário " + e.getName() + " receberá R$" + salarioLiquido + ".");
         }
 
     }
