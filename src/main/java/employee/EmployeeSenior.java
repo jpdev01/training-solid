@@ -3,7 +3,7 @@ package employee;
 import calculator.Calculator;
 import calculator.CalculatorInterface;
 
-public class Employee implements EmployeeInterface{
+public class EmployeeSenior implements EmployeeInterface{
 
     private String name;
     private String account;
@@ -12,9 +12,9 @@ public class Employee implements EmployeeInterface{
     private Float totalHours;
     private CalculatorInterface calc;
 
-    public Employee() {}
+    public EmployeeSenior() {}
 
-    public Employee(String name, String account, Float salario, Float workedHours, Float totalHours)
+    public EmployeeSenior(String name, String account, Float salario, Float workedHours, Float totalHours)
     {
         this.setName(name);
         this.setAccount(account);
