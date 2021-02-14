@@ -1,5 +1,5 @@
 package printer;
 
 public interface PrinterInterface {
-    public void print();
+    public void print(String content);
 }
